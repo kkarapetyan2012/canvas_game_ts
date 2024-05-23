@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ballz</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .playButton {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            border: 1px solid #8181da;
+            border-radius: 6px;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: all .3s ease;
+
+            background-color: #8181da;
+            color: #fff;
+        }
+
+        .playButton:hover {
+            border: 1px solid black;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <canvas id="gameCanvas" ></canvas>
+        <audio id="backgroundMusic" loop preload="auto">
+            <source src="https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="muteButton" class="playButton" >Play</button>
+    </section>
+
+    <script src="/dist/index.js"></script>
+</body>
+</html>
